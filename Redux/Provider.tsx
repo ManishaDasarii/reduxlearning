@@ -13,10 +13,5 @@ export function Providers({ children }: { children: React.ReactNode }) {
       persistor.persist();
     });
   }
-  return (
-    <Provider store={store}>
-      <PersistGate persistor={persistor} />
-      {children}
-    </Provider>
-  );
+  return <Provider store={store}>{children}</Provider>;
 }

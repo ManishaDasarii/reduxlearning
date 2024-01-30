@@ -5,10 +5,7 @@ import { IReduxUserLogin } from "./userlogin";
 
 const reducerName = "userLogin";
 
-type AddUserDetailsAction = {
-  type: string;
-  payload: IReduxUserLogin.UserDetails;
-};
+
 
 export const initialState: IReduxUserLogin.IInitialLoginState = {
   userDetails: {

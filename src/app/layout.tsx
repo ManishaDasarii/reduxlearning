@@ -1,3 +1,4 @@
+import { Provider } from "react-redux";
 import { Providers } from "../../Redux/Provider";
 
 export default function RootLayout({
@@ -8,8 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <Providers></Providers> */}
-        {children}
+        <Providers> {children}</Providers>
       </body>
     </html>
   );
