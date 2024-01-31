@@ -60,7 +60,7 @@ function Page() {
           setEmail(e.target.value)
         }
       />
-      {/* <div>{errors.email}</div> */}
+      {<div>{errors.email}</div>}
 
       <br></br>
       <br></br>
